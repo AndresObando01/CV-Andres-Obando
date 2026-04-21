@@ -1,0 +1,168 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1.55cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{needspace}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=MidnightBlue,
+  linkcolor=MidnightBlue,
+  pdfauthor={Andrés Esteban Obando Sanipatín},
+  pdftitle={CV - Andrés Esteban Obando Sanipatín}
+}
+
+\definecolor{cvblue}{HTML}{133E7C}
+\definecolor{cvgray}{HTML}{50606F}
+\definecolor{cvlight}{HTML}{EEF4FA}
+\definecolor{cvline}{HTML}{D6E0EA}
+
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.22em}
+\setlist[itemize]{leftmargin=1.1em, itemsep=0.15em, topsep=0.18em}
+
+\titleformat{\section}
+  {\large\bfseries\color{cvblue}}{}{0em}{}
+  [\vspace{0.2em}\color{cvline}\titlerule]
+\titlespacing*{\section}{0pt}{0.7em}{0.35em}
+
+\newcommand{\cventry}[4]{%
+  \Needspace{3\baselineskip}%
+  {\bfseries #1} \hfill {\small\color{cvgray} #2}\\
+  {\itshape #3}\\[-0.25em]
+  #4\par\vspace{0.25em}
+}
+
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline=(txt.base)]\node[rounded corners=4pt, fill=cvlight, text=cvblue, inner xsep=5pt, inner ysep=3pt] (txt) {\small\strut #1};%
+}
+
+\newcommand{\roundphoto}[2]{%
+\begin{tikzpicture}
+  \clip (0,0) circle (#1);
+  \node at (0,0) {\includegraphics[width=#2]{Yo_CV_crop.jpg}};
+  \draw[cvblue, line width=1pt] (0,0) circle (#1);
+\end{tikzpicture}%
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\textwidth}{@{}m{2.8cm}@{\hspace{0.55cm}}X@{}}
+\centering\roundphoto{1.25cm}{3.0cm}
+& {\fontsize{19}{21}\selectfont\bfseries\color{cvblue} ANDRÉS ESTEBAN OBANDO SANIPATÍN}\\[0.15em]
+& {\normalsize\color{cvgray} Ingeniero Químico \textbar{} Docente Universitario \textbar{} Máster en Energías Renovables}\\[0.3em]
+& {\small\color{cvgray} Quito, Ecuador \textbar{} 0984498811 \textbar{} \href{mailto:aeosangabriel@hotmail.com}{aeosangabriel@hotmail.com}}\\
+& {\small\color{cvgray} \href{mailto:aeobandos@uce.edu.ec}{aeobandos@uce.edu.ec} \textbar{} \href{https://www.linkedin.com/in/andresobando1101}{linkedin.com/in/andresobando1101}}\\
+\end{tabularx}
+
+\section*{Perfil profesional}
+Ingeniero químico con formación de cuarto nivel en \textbf{Energías Renovables} y \textbf{Docencia Superior Universitaria}. Experiencia en docencia universitaria, nivelación académica, apoyo a laboratorios, investigación aplicada y análisis de datos. Actualmente se desempeña como \textbf{Docente Auxiliar 1} de la Universidad Central del Ecuador, donde imparte \textbf{Química General I} y \textbf{Balance de Energía} en la carrera de Ingeniería Química. Su perfil integra base científica, enfoque pedagógico, manejo de herramientas digitales y experiencia en procesos académicos e institucionales.
+
+\section*{Experiencia profesional}
+\cventry{Docente Auxiliar 1}{Abr. 2026 -- Actualidad}{Universidad Central del Ecuador \textbar{} Facultad de Ingeniería Química}{%
+\begin{itemize}
+  \item Docente de las asignaturas \textbf{Química General I} y \textbf{Balance de Energía} en la carrera de Ingeniería Química.
+  \item Planificación, acompañamiento académico y evaluación del aprendizaje en contexto universitario.
+\end{itemize}}
+
+\cventry{Técnico Docente}{Jul. 2024 -- Abr. 2026}{Universidad Central del Ecuador \textbar{} Facultad de Ingeniería Química}{%
+\begin{itemize}
+  \item Impartición de cursos de nivelación y apoyo académico en Física, Matemática y Geometría.
+  \item Soporte a laboratorios, actividades académicas, investigación y procesos administrativos de la Facultad.
+\end{itemize}}
+
+\cventry{Analista de Datos}{Nov. 2023 -- Mar. 2024}{ESPE Innovativa}{%
+\begin{itemize}
+  \item Participación en el proyecto \textbf{RENAGRO}, incluyendo estructuración de datos y apoyo en formularios digitales para captura y tratamiento de información.
+\end{itemize}}
+
+\cventry{Docente de nivelación y apoyo académico}{Feb. 2022 -- Jun. 2024}{Grupo Impulsar \textbar{} Preuniversitario Politécnica}{%
+\begin{itemize}
+  \item Nivelación y clases en Física, Química, Matemática, Geometría y razonamiento lógico.
+\end{itemize}}
+
+\cventry{Docente}{Nov. 2020 -- Abr. 2022}{Instituto Superior Tecnológico Superarse}{%
+\begin{itemize}
+  \item Docencia en Inglés Básico, Inglés A1 e Higiene de los Alimentos.
+\end{itemize}}
+
+\cventry{Experiencia en investigación y laboratorio}{2020 -- 2023}{Escuela Politécnica Nacional \textbar{} Agroindustria LCM}{%
+\begin{itemize}
+  \item Investigación en extracción de oleorresinas, ensayos electroquímicos, espectroscopía Raman y caracterización experimental.
+  \item Verificación de procesos, BPM y control de calidad en producción alimentaria.
+\end{itemize}}
+
+\newpage
+
+\section*{Formación académica}
+\cventry{Máster Universitario en Energías Renovables}{Dic. 2025}{Universidad Internacional de La Rioja (UNIR)}{}
+\cventry{Máster Universitario en Docencia Superior Universitaria}{Abr. 2024}{Universidad Internacional de La Rioja (UNIR)}{}
+\cventry{Ingeniero Químico}{Abr. 2020}{Escuela Politécnica Nacional}{}
+\cventry{Productor Musical}{May. 2023}{Instituto Superior Tecnológico de Artes Visuales}{}
+
+\section*{Certificaciones seleccionadas}
+\begin{multicols}{2}
+\begin{itemize}
+  \item Programación en Python y Manejo de Datos (UCE, 30 h, 2025)
+  \item Introducción a la normativa ISO/IEC 17025 (UCE-FIQ, 10 h, 2025)
+  \item Aplicación de la Inteligencia Artificial en la Educación Superior (UCE, 20 h, 2024)
+  \item Metodología de la Investigación (UCE, 20 h, 2024)
+  \item Fundamentos de Contratación Pública (SERCOP, 2024)
+  \item Formación de Formadores (certificación por competencias laborales)
+\end{itemize}
+\end{multicols}
+
+\section*{Competencias y áreas de trabajo}
+\vspace{0.15em}
+\cvtag{Docencia universitaria}
+\hspace{0.35em}
+\cvtag{Química General I}
+\hspace{0.35em}
+\cvtag{Balance de Energía}
+\hspace{0.35em}
+\cvtag{Investigación aplicada}\\[0.35em]
+\cvtag{Apoyo a laboratorios}
+\hspace{0.35em}
+\cvtag{Análisis de datos}
+\hspace{0.35em}
+\cvtag{Energías renovables}
+\hspace{0.35em}
+\cvtag{Innovación educativa}\\[0.35em]
+\cvtag{Herramientas de IA}
+\hspace{0.35em}
+\cvtag{Control de calidad}
+\hspace{0.35em}
+\cvtag{Procesos académicos}
+
+\vspace{0.55em}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{cvblue}}p{4.2cm}X@{}}
+Herramientas digitales & Office 365, Google Workspace, Moodle, Teams, SPSS, CSPro, Statgraphics, Python, ChatGPT, Gemini y Claude. \\
+Software creativo & Adobe Illustrator, Adobe Premiere, Photoshop, Pro Tools, Ableton Live y Reaper. \\
+Fortalezas profesionales & Planificación docente, comunicación académica, trabajo en equipo, organización, adaptación tecnológica, redacción técnica y soporte institucional. \\
+Líneas de interés & Docencia en ingeniería química, energías renovables, corrosión y bioinhibidores, análisis de datos, metodologías de investigación y uso pedagógico de inteligencia artificial. \\
+Idiomas & Español nativo; Inglés nivel B1. \\
+\end{tabularx}
+
+\section*{Proyectos y actividad complementaria}
+\begin{itemize}
+  \item Participación en proyectos vinculados con \textbf{inhibidores de corrosión}, caracterización de materiales y estudio de \textbf{oleorresinas}.
+  \item Experiencia complementaria en \textbf{producción musical} para videojuegos, composición sonora y trabajo con herramientas digitales creativas.
+  \item Perfil con capacidad para articular docencia, investigación, análisis de datos y recursos tecnológicos en entornos educativos y académicos.
+\end{itemize}
+
+\end{document}

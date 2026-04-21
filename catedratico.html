@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrés Obando — Catedrático Universitario · Ingeniero Químico</title>
+  <meta name="description" content="Perfil académico de Andrés Esteban Obando Sanipatín. Catedrático Universitario, Ingeniero Químico, Mgtr. en Energías Renovables y Docencia Superior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="catedratico-page page-enter">
+
+  <div class="ambient-bg"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Volver al inicio">
+        <img src="assets/logo.jpeg" alt="Logo" width="36" height="36" loading="eager">
+        <span>Andrés Obando</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#certificaciones">Certificaciones</a></li>
+        <li><a href="#competencias">Competencias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero" id="inicio">
+    <div class="container">
+      <div class="page-hero-content">
+        <img src="assets/logo.jpeg" alt="Logo" class="page-hero-logo" width="90" height="90" loading="eager">
+        <h1 class="page-hero-name">Andrés Esteban Obando Sanipatín</h1>
+        <p class="page-hero-subtitle">Catedrático Universitario · Ingeniero Químico · Mgtr.</p>
+        <p class="page-hero-quote">"No todos los que vagan están perdidos"</p>
+        <div class="page-hero-buttons">
+          <a href="assets/CV_AndresObando.pdf" download class="btn btn-primary">↓ Descargar CV PDF</a>
+          <a href="https://soundcloud.com/aeos01" target="_blank" rel="noopener noreferrer" class="btn btn-outline">♫ SoundCloud</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCIA PROFESIONAL ===== -->
+  <section id="experiencia" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-label reveal">Trayectoria</div>
+      <h2 class="section-title reveal">Experiencia <strong>Profesional</strong></h2>
+
+      <div class="timeline stagger-children">
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Abril 2026 — Actualidad</div>
+          <h3 class="timeline-title">Docente Auxiliar 1</h3>
+          <p class="timeline-place">Universidad Central del Ecuador</p>
+          <p class="timeline-desc">Docencia en Química General I y Balance de Energía en la carrera de Ingeniería Química.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Junio 2024 — Abril 2026</div>
+          <h3 class="timeline-title">Técnico Docente</h3>
+          <p class="timeline-place">Universidad Central del Ecuador — Facultad de Ingeniería Química</p>
+          <p class="timeline-desc">Apoyo académico, gestión de laboratorios, investigación, nivelación y soporte tecnológico.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Mayo 2024 — Junio 2024</div>
+          <h3 class="timeline-title">Docente</h3>
+          <p class="timeline-place">Preuniversitario Politécnica</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Octubre 2023 — Diciembre 2023</div>
+          <h3 class="timeline-title">Analista de Datos</h3>
+          <p class="timeline-place">ESPE INNOVATIVA</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Febrero 2022 — Abril 2024</div>
+          <h3 class="timeline-title">Docente Particular</h3>
+          <p class="timeline-place">Grupo Impulsar</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Agosto 2022 — Noviembre 2022</div>
+          <h3 class="timeline-title">Asistente de Investigación</h3>
+          <p class="timeline-place">Escuela Politécnica Nacional</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Noviembre 2020 — Abril 2022</div>
+          <h3 class="timeline-title">Docente</h3>
+          <p class="timeline-place">Instituto Superior Tecnológico Superarse</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMACIÓN ACADÉMICA ===== -->
+  <section id="formacion">
+    <div class="container">
+      <div class="section-label reveal">Formación Académica</div>
+      <h2 class="section-title reveal">Educación <strong>Formal</strong></h2>
+
+      <div class="edu-grid stagger-children">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <h3 class="edu-degree">Máster en Energías Renovables</h3>
+          <p class="edu-school">Universidad Internacional de La Rioja (UNIR)</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <h3 class="edu-degree">Máster en Docencia Superior Universitaria</h3>
+          <p class="edu-school">Universidad Internacional de La Rioja (UNIR)</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">⚗️</div>
+          <h3 class="edu-degree">Ingeniero Químico</h3>
+          <p class="edu-school">Escuela Politécnica Nacional</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎵</div>
+          <h3 class="edu-degree">Productor Musical</h3>
+          <p class="edu-school">Instituto Superior Tecnológico de Artes Visuales</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICACIONES ===== -->
+  <section id="certificaciones" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-label reveal">Certificaciones</div>
+      <h2 class="section-title reveal">Desarrollo <strong>Continuo</strong></h2>
+
+      <div class="cert-grid stagger-children">
+        <div class="cert-item reveal"><span class="cert-dot"></span> Programación en Python y Manejo de Datos</div>
+        <div class="cert-item reveal"><span class="cert-dot"></span> Aplicación de la IA en la Educación Superior</div>
+        <div class="cert-item reveal"><span class="cert-dot"></span> Formación de Formadores</div>
+        <div class="cert-item reveal"><span class="cert-dot"></span> Metodología de la Investigación</div>
+        <div class="cert-item reveal"><span class="cert-dot"></span> Introducción a la normativa ISO/IEC 17025</div>
+        <div class="cert-item reveal"><span class="cert-dot"></span> Fundamentos de Contratación Pública</div>
+        <div class="cert-item reveal"><span class="cert-dot"></span> Inglés B1</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPETENCIAS ===== -->
+  <section id="competencias">
+    <div class="container">
+      <div class="section-label reveal">Competencias</div>
+      <h2 class="section-title reveal">Habilidades <strong>Técnicas</strong></h2>
+
+      <div class="skills-grid">
+        <div class="skills-column reveal">
+          <h3>Académicas / Técnicas</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docencia universitaria</span>
+            <span class="skill-tag">Ingeniería química</span>
+            <span class="skill-tag">Balance de energía</span>
+            <span class="skill-tag">Química general</span>
+            <span class="skill-tag">Laboratorio y QC</span>
+            <span class="skill-tag">Investigación aplicada</span>
+            <span class="skill-tag">Análisis de datos</span>
+            <span class="skill-tag">SPSS</span>
+            <span class="skill-tag">CSPro</span>
+            <span class="skill-tag">Statgraphics</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Moodle</span>
+            <span class="skill-tag">Teams</span>
+            <span class="skill-tag">Google Workspace</span>
+            <span class="skill-tag">Office 365</span>
+            <span class="skill-tag">IA aplicada a educación</span>
+          </div>
+        </div>
+        <div class="skills-column reveal">
+          <h3>Herramientas Digitales</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ChatGPT</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">Claude</span>
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">Adobe Premiere</span>
+            <span class="skill-tag">Photoshop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-label reveal">Contacto</div>
+      <h2 class="section-title reveal">Conectemos</h2>
+
+      <div class="contact-content">
+        <p class="contact-text reveal">Si deseas contactarme para oportunidades académicas, proyectos de investigación o colaboraciones, no dudes en escribirme.</p>
+
+        <div class="contact-links">
+          <a href="mailto:aeosangabriel@gmail.com" class="contact-link reveal">
+            <span class="contact-link-icon">✉</span>
+            <div>
+              <div class="contact-link-label">Gmail</div>
+              <div class="contact-link-text">aeosangabriel@gmail.com</div>
+            </div>
+          </a>
+          <a href="mailto:aeosangabriel@hotmail.com" class="contact-link reveal">
+            <span class="contact-link-icon">✉</span>
+            <div>
+              <div class="contact-link-label">Hotmail</div>
+              <div class="contact-link-text">aeosangabriel@hotmail.com</div>
+            </div>
+          </a>
+          <a href="mailto:aeobados@uce.edu.ec" class="contact-link reveal">
+            <span class="contact-link-icon">🎓</span>
+            <div>
+              <div class="contact-link-label">Institucional</div>
+              <div class="contact-link-text">aeobados@uce.edu.ec</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/andresobando1101/" target="_blank" rel="noopener noreferrer" class="contact-link reveal">
+            <span class="contact-link-icon">in</span>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-text">andresobando1101</div>
+            </div>
+          </a>
+          <a href="https://soundcloud.com/aeos01" target="_blank" rel="noopener noreferrer" class="contact-link reveal">
+            <span class="contact-link-icon">♫</span>
+            <div>
+              <div class="contact-link-label">SoundCloud</div>
+              <div class="contact-link-text">AEOS01</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Andrés Esteban Obando Sanipatín <span>·</span> Catedrático Universitario <span>·</span> 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

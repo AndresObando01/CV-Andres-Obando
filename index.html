@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrés Obando — Catedrático Universitario · Productor Musical</title>
+  <meta name="description" content="Portafolio profesional de Andrés Esteban Obando Sanipatín. Catedrático Universitario e Ingeniero Químico en la Universidad Central del Ecuador y Productor Musical como AEOS01.">
+  <meta name="author" content="Andrés Esteban Obando Sanipatín">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-page">
+
+  <div class="ambient-bg"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="landing-wrapper">
+    <div class="landing-content">
+
+      <!-- Photo Flip Card -->
+      <div class="photo-flip-container" tabindex="0" aria-label="Foto de perfil">
+        <div class="photo-flip-card">
+          <div class="photo-face photo-front">
+            <img src="assets/foto.jpeg" alt="Andrés Esteban Obando Sanipatín" width="180" height="180" loading="eager">
+          </div>
+          <div class="photo-face photo-back">
+            <img src="assets/logo.jpeg" alt="AEOS01 Logo" width="180" height="180" loading="eager">
+          </div>
+        </div>
+      </div>
+
+      <!-- Name -->
+      <h1 class="landing-name">Andrés Esteban <strong>Obando Sanipatín</strong></h1>
+
+      <!-- Two Flip Buttons -->
+      <div class="identity-buttons">
+
+        <!-- Catedrático Universitario -->
+        <a href="catedratico.html" class="identity-flip-container" id="btn-catedratico">
+          <div class="identity-flip-card">
+            <div class="identity-face identity-front">
+              <div class="identity-number">01 — Académico</div>
+              <div class="identity-title">Catedrático Universitario</div>
+              <div class="identity-role">Ingeniero Químico · Mgtr.</div>
+              <div class="identity-click-hint">Explorar perfil</div>
+            </div>
+            <div class="identity-face identity-back-face">
+              <div class="identity-back-name">Ing. Andrés Esteban Obando Sanipatín, Mgtr.</div>
+              <div class="identity-back-role">Catedrático Universitario · Ingeniero Químico</div>
+              <div class="identity-back-desc">Catedrático e investigador con enfoque en ingeniería química, docencia universitaria, análisis de datos, laboratorios, investigación aplicada y energía.</div>
+              <div class="identity-back-cta">Clic para ver más →</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Productor Musical -->
+        <a href="productor.html" class="identity-flip-container" id="btn-productor">
+          <div class="identity-flip-card">
+            <div class="identity-face identity-front">
+              <div class="identity-number">02 — Creativo</div>
+              <div class="identity-title">Productor Musical</div>
+              <div class="identity-role">AEOS01</div>
+              <div class="identity-click-hint">Explorar perfil</div>
+            </div>
+            <div class="identity-face identity-back-face">
+              <div class="identity-back-name">AEOS01</div>
+              <div class="identity-back-role">Productor Musical</div>
+              <div class="identity-back-desc">Compositor y productor musical orientado a bandas sonoras, mezcla, masterización y diseño sonoro.</div>
+              <div class="identity-back-cta">Clic para ver más →</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
